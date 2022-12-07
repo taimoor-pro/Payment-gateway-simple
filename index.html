@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- after practice CSS now apply CSS in this form -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <p align="center">Form Created By <strong>Syed Taimoor Nawaz</strong></p>
+    <div class="container">
+        <h1 class="main-heading">Payment Form</h1>
+        <hr>
+        <h2>User Information</h2>
+        <form action="payment.php">
+            <fieldset>
+                <legend>User Details</legend>
+                <p>
+                    <label for="fname">First Name: <span>*</span>
+                        <input type="text" name="name" id="fname" size="20" maxlength="10" required placeholder="Syed">
+                    </label>
+                    <br>
+                    <br>
+                    <label for="lname">Last Name: <span>*</span>
+                        <input type="text" name="name" id="lname" size="20" maxlength="10" required placeholder="Taimoor Nawaz">
+                    </label>
+                </p>
+
+                <p>
+                    Gender: <span>*</span>
+                    <label for="male">
+                        <input type="radio" name="gender" value="male" id="male"> Male
+                    </label>
+
+                    <label for="femail">
+                        <input type="radio" name="gender" value="femail" id="femail"> Femail
+                    </label>
+
+                    <label for="other">
+                        <input type="radio" name="gender" value="other" id="other"> Other
+                    </label>
+                </p>
+
+                <p>
+                    <label for="email"> Email: <span>*</span>
+                        <input type="email" name="email" id="email" required placeholder="e.g. taimoor@gmail.com">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="picode"> Pincode: <span>*</span>
+                        <input type="number" name="picode" id="picode" required placeholder="e.g. 12345">
+                    </label>
+                </p>
+
+                <p>
+                    Address: <span>*</span>
+                    <label for="address">
+                        <textarea name="address" id="address" cols="40" rows="10" required placeholder="e.g. bufferzone.."></textarea>
+                    </label>
+                </p>
+            </fieldset>
+
+            <h2>Payment Information</h2>
+            <fieldset>
+                <legend>Payment Details</legend>
+                <p>
+                    <label for="cardtype">Card Type: <span>*</span>
+                        <select name="cardtype" id="cardtype" required>
+                            <option value="#">Select One</option>
+                            <option value="Student card">Student card</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="americanexpress">American Express</option>
+                            <option value="discover">Discover</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="cardnumber">Card Number: <span>*</span>
+                        <input type="number" name="cardnumber" id="cardnumber" required placeholder="12345">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="expirationdate">Expiration Date: <span>*</span>
+                        <input type="date" name="expirationdate" id="expirationdate" required placeholder="12/11/2022">
+                    </label>
+
+                    <label for="CVV">CVV: <span>*</span>
+                        <input type="number" name="CVV" id="CVV" required placeholder="12345">
+                    </label>
+                </p>
+            </fieldset>
+
+            <p>
+                All information submitted is true and correct:
+                <input type="submit" value="submit">
+                <br>
+                If Your all information is wrong so reset this form and fill again:
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
